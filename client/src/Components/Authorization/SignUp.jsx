@@ -29,7 +29,7 @@ const SignUp = () => {
 	const [uploadedAvatar, setUploadedAvatar] = useState(null)
 
 	const goBack = () => {
-		navigate(`${baseUrl}/signin`)
+		navigate(`/signin`)
 	}
 
 	const submitHandler = event => {

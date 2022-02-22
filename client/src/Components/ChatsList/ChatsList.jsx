@@ -32,7 +32,7 @@ const ChatsList = (props) => {
 			setChats(previousState => [{ chatId, user, lastMessage, unreadMessage, }, ...previousState])
 		}
 
-		navigate(`${baseUrl}/chat/${chatId}`)
+		navigate(`/chat/${chatId}`)
 	}
 
 
