@@ -65,7 +65,7 @@ router.post(
 
 			// return tokens !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 			//res.cookie('refreshToken', tokens.refreshToken, { domain: 'localhost', maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true })
-			res.cookie('refreshToken', tokens.refreshToken, { domain: 'online-chat-messenger', maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true })
+			res.cookie('refreshToken', tokens.refreshToken, { maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true })
 			res.status(201).json({ ...tokens, _id: user._id, email: user.email, nickname: user.nickname, avatar: avatar })
 
 		} catch (e) {
@@ -109,7 +109,7 @@ router.post(
 
 			// return tokens !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 			//res.cookie('refreshToken', tokens.refreshToken, { domain: 'localhost', maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true })
-			res.cookie('refreshToken', tokens.refreshToken, { domain: 'online-chat-messenger', maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true })
+			res.cookie('refreshToken', tokens.refreshToken, { maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true })
 			res.status(201).json({ ...tokens, _id: user._id, email: user.email, nickname: user.nickname, avatar: UserService.base64BufferToBlob(user.avatar, 'data:image/jpeg;base64,') })
 
 		} catch (e) {
@@ -163,7 +163,7 @@ router.get(
 
 			//// return tokens !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 			//res.cookie('refreshToken', tokens.refreshToken, { domain: 'localhost', maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true })
-			res.cookie('refreshToken', tokens.refreshToken, { domain: 'online-chat-messenger', maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true })
+			res.cookie('refreshToken', tokens.refreshToken, { maxAge: 30 * 24 * 60 * 60 * 1000, httpOnly: true })
 			//res.status(201).json({ ...tokens, email: user.email, nickname: user.nickname})
 			res.status(201).json({ ...tokens, _id: user._id, email: user.email, nickname: user.nickname, avatar: UserService.base64BufferToBlob(user.avatar, 'data:image/jpeg;base64,') })
 
