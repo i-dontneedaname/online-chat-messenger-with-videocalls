@@ -17,7 +17,7 @@ const SetupAvatar = (props) => {
 	const {
 		uploadedAvatar,
 		resetAvatar,
-		avatarChangeHandler
+		onAvatarChange
 	} = props
 
 	const imgInputRef = useRef()
@@ -60,7 +60,7 @@ const SetupAvatar = (props) => {
 					accept="image/jpeg"
 					id="icon-button-file"
 					type="file"
-					onChange={avatarChangeHandler}
+					onChange={onAvatarChange}
 					ref={imgInputRef}
 				/>
 				<IconButton
