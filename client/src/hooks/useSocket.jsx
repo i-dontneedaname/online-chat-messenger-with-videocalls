@@ -9,7 +9,7 @@ export const useSocket = () => {
 	useEffect(() => {
 
 		//const socket = io("ws://localhost:5000", {
-		const socket = io("ws://online-chat-messenger.herokuapp.com", {
+		const socket = io("wss://online-chat-messenger.herokuapp.com", {
 			"force new connection": true,
 			reconnectionAttempts: "Infinity",
 			timeout: 10000,
