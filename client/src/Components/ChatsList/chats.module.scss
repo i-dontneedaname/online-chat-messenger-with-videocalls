@@ -1,0 +1,95 @@
+.active {
+	background-color: #e8e8e8;
+}
+
+.header {
+	font-size: 20px;
+	font-weight: 500;
+	text-align: center;
+	padding-top: 10px;
+	margin-bottom: 5px;
+}
+
+.list {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 12px;
+	
+	.item {
+		width: 100%;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: flex-start;
+		align-items: flex-start;
+		text-decoration: none;
+		color: inherit;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+		padding: 8px 5px;
+		transition: all 0.2s ease-in-out;
+		cursor: pointer;
+
+		&:last-child {
+			border-bottom: none;
+		}
+		&:hover {
+			background-color: #e8e8e8;
+		}
+
+		//.avatar {
+		//	position: relative;
+		//}
+
+		.basicInfo {
+			flex-grow: 1;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			overflow: hidden;
+			margin: 0 5px;
+			padding-top: 4px;
+			.nickname {
+				max-width: 100%;
+				margin: 0 0 2px;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				font-weight: 500;
+				font-size: 17px;
+			}
+
+			.message {
+				max-width: 100%;
+				overflow: hidden;
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				margin: 0;
+				font-size: 14px;
+
+				.status {
+					vertical-align: middle;
+					margin-right: 5px;
+				}
+			}
+		}
+
+		.otherInfo {
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-end;
+			padding-top: 5px;
+			font-size: 14px;
+
+			.time {
+				margin-bottom: 3px;
+			}
+
+			.messages {
+				//text-align: right;
+				padding-right: 10px;
+			}
+		}
+	}
+}

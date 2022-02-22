@@ -1,0 +1,44 @@
+.container {
+	height: 100vh;
+
+	.imgWrapper {
+		background-image: url(https://source.unsplash.com/random);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+	}
+	
+	.contentWrapper {
+		position: relative;
+		display: flex;
+		flex-direction: column !important;
+		align-items: center;
+		padding: 62px 32px;
+	
+		.back {
+			position: absolute;
+			left: 0;
+		}
+	
+		.title {
+			font-size: 26px;
+			//font-weight: 400;
+		}
+	
+		.form {
+			width: 90%;
+			margin-top: 8px;
+	
+			.button {
+				margin-top: 24px;
+			}
+	
+			.link {
+				display: inline-block;
+				margin-top: 8px;
+			}
+		}
+	}
+}
+
+

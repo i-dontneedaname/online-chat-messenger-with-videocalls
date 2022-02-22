@@ -1,0 +1,48 @@
+.wrapper {
+	height: calc(100vh - 60px);
+	align-items: stretch;
+	flex-wrap: nowrap !important;
+	overflow: hidden;
+
+	.scroll {
+		border-radius: 0;
+		position: relative;
+		overflow-y: auto;
+
+		scrollbar-width: thin;
+		scrollbar-color: #969696 #f7f7f7;
+
+		&::-webkit-scrollbar {
+			width: 4px; /* ширина scrollbar */
+		}
+		&::-webkit-scrollbar-track {
+			background: #f7f7f7; /* цвет дорожки */
+		}
+		&::-webkit-scrollbar-thumb {
+			background-color: #969696; /* цвет плашки */
+			border-radius: 20px; /* закругления плашки */
+			//border: 3px solid orange; /* padding вокруг плашки */
+		}
+	}
+
+	.nonScroll {
+		position: relative;
+	}
+
+	.button {
+		position: absolute;
+		top: 125px;
+		border-radius: 5px;
+		padding: 4px;
+		color: #000;
+		z-index: 10;
+	}
+
+	.usersClosed {
+		right: 0px;
+	}
+
+	.chatsClosed {
+		left: 0;
+	}
+}

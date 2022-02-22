@@ -1,0 +1,12 @@
+.appbar {
+	height: 60px;
+
+	.toolbar {
+		height: 60px;
+
+		.logo {
+			flex-grow: 1;
+			margin-right: 10px;
+		}
+	}
+}

@@ -1,0 +1,12 @@
+export const USER_LOADING = "USER_LOADING";
+export const SUCCESS_LOGIN = "SUCCESS_LOGIN";
+export const LOGIN_FALIED = "LOGIN_FALIED";
+export const LOGOUT = "LOGOUT";
+export const SET_SETTINGS = "SET_SETTINGS";
+
+
+//export const SET_COMMON_NOTIFICATION = "SET_COMMON_NOTIFICATION";
+//export const SET_ERROR = "SET_ERROR";
+
+export const SET_NOTIFICATION = "SET_NOTIFICATION"
+
