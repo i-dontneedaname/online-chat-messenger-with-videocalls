@@ -74,7 +74,7 @@ const SignUp = () => {
 
 			<SetupAvatar
 				uploadedAvatar={uploadedAvatar}
-				avatarChangeHandler={avatarChangeHandler}
+				onAvatarChange={avatarChangeHandler}
 				resetAvatar={resetAvatar}
 			/>
 
