@@ -16,9 +16,9 @@
 - MongoDB
 
 **Screenshots :**
-![chat][./readmeUtils/chat_1.jpg]
-![chat][./readmeUtils/chat_2.jpg]
-![chat][./readmeUtils/chat_3.jpg]
-![chat][./readmeUtils/chat_4.jpg]
-![chat][./readmeUtils/chat_5.jpg]
-![chat][./readmeUtils/chat_6.jpg]
+![chat](./readmeUtils/chat_1.jpg)
+![chat](./readmeUtils/chat_2.jpg)
+![chat](./readmeUtils/chat_3.jpg)
+![chat](./readmeUtils/chat_4.jpg)
+![chat](./readmeUtils/chat_5.jpg)
+![chat](./readmeUtils/chat_6.jpg)
